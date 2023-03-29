@@ -3,7 +3,7 @@ const items = [
         id: 1,
         title: "Boating",
         descr: "Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.",
-        img: "https://picsum.photos/id/1011/800/450",
+        img: "https://fastly.picsum.photos/id/1011/800/450.jpg?hmac=AcIOjTIwzVkiq83Iq7b-fjWHV-BqPtti93tGef3D48A",
     },
     {
         id: 2,

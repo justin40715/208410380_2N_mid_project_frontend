@@ -12,7 +12,7 @@ const CardNodeServerPage_80 = () => {
 
     const fetchCardDataFromServer = async () => {
         try {
-            const results = await axios.get(api_url);
+            const results = await axios.post('https://mid-project-backend.onrender.com/api/card2_8');
             console.log('results', results);
             setData(results.data);
           } catch (error) {

@@ -1,6 +1,6 @@
 import { useState,useEffect } from 'react';
 import axios from 'axios';
-
+import Wrapper from '../assets/wrapper/Cards_80';
 let api_url = `https://mid-project-backend.onrender.com/api/card2_80`;
 
 const CardNodeServerPage_80 = () => {
@@ -12,7 +12,7 @@ const CardNodeServerPage_80 = () => {
 
     const fetchCardDataFromServer = async () => {
         try {
-            const results = await axios.post('https://mid-project-backend.onrender.com/api/card2_8');
+            const results = await axios.get(api_url);
             console.log('results', results);
             setData(results.data);
           } catch (error) {
@@ -24,7 +24,7 @@ const CardNodeServerPage_80 = () => {
       }, []);
 
     return (
-        <>  
+        <Wrapper>  
             <div className="section-title">
                 <h2>Fetch Cards Node Server</h2>
                 <h3>{name} {id}</h3>
@@ -56,7 +56,7 @@ const CardNodeServerPage_80 = () => {
                 })}
 
             </section>
-        </>
+        </Wrapper>
     )
 }
 

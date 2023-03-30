@@ -30,7 +30,7 @@ const Wrapper = styled.div`
   #menu {
       position: relative;
       float: right;
-      width: 700px;
+      width: 800px;
       padding: 0 20px;
       border-radius: 3px;
       box-shadow: inset 0 1px 1px rgba(255,255,255,.5), inset 0 -1px 0 rgba(0,0,0,.15), 0 1px 3px rgba(0,0,0,.15);

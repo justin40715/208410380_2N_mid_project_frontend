@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 import cardData from '../data/cardData_80';
 
+import Wrapper from '../assets/wrapper/Cards_80';
 const CardLocalJsonPage_80 = () => {
     const [name, setName] = useState('Pocheng Chu');
     const [id, setId] = useState('208410380');
@@ -9,7 +10,7 @@ const CardLocalJsonPage_80 = () => {
     const [data, setData] = useState(cardData);
     console.log('card data', data);
     return (
-        <>
+        <Wrapper>
             <div className="section-title">
                 <h2>Fetch Cards from Local Json</h2>
                 <h3>{name} {id}</h3>
@@ -41,7 +42,7 @@ const CardLocalJsonPage_80 = () => {
                 })}
 
             </section>
-        </>
+        </Wrapper   >
     )
 }
 

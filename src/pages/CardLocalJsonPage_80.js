@@ -1,14 +1,14 @@
 import { useState } from 'react';
 
-import cardData from '../data/cardData_80';
-
 import Wrapper from '../assets/wrapper/Cards_80';
+import { useCardContext_80 } from '../context/CardContext';
 const CardLocalJsonPage_80 = () => {
-    const [name, setName] = useState('Pocheng Chu');
-    const [id, setId] = useState('208410380');
+    // const [name, setName] = useState('Pocheng Chu');
+    // const [id, setId] = useState('208410380');
 
-    const [data, setData] = useState(cardData);
-    console.log('card data', data);
+    // const [data, setData] = useState(cardData);
+    // console.log('card data', data);
+    const {name, id, data} = useCardContext_80();
     return (
         <Wrapper>
             <div className="section-title">

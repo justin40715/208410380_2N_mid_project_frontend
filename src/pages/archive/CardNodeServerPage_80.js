@@ -1,28 +1,27 @@
 import { useState,useEffect } from 'react';
 import axios from 'axios';
 import Wrapper from '../assets/wrapper/Cards_80';
-import { useCardContext_80 } from '../context/CardContext';
 let api_url = `https://mid-project-backend.onrender.com/api/card2_80`;
 
 const CardNodeServerPage_80 = () => {
-    // const [name, setName] = useState('Pocheng Chu');
-    // const [id, setId] = useState('208410380');
+    const [name, setName] = useState('Pocheng Chu');
+    const [id, setId] = useState('208410380');
 
-    // const [data, setData] = useState([]);
+    const [data, setData] = useState([]);
     // console.log('card data', data);
-    const {name, id, data} = useCardContext_80();
-    // const fetchCardDataFromServer = async () => {
-    //     try {
-    //         const results = await axios.get(api_url);
-    //         console.log('results', results);
-    //         setData(results.data);
-    //       } catch (error) {
-    //         console.log(error);
-    //       }
-    //   };
-    //   useEffect(() => {
-    //     fetchCardDataFromServer();
-    //   }, []);
+
+    const fetchCardDataFromServer = async () => {
+        try {
+            const results = await axios.get(api_url);
+            console.log('results', results);
+            setData(results.data);
+          } catch (error) {
+            console.log(error);
+          }
+      };
+      useEffect(() => {
+        fetchCardDataFromServer();
+      }, []);
 
     return (
         <Wrapper>  

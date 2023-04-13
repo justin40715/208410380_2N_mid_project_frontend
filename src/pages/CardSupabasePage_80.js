@@ -1,27 +1,28 @@
 import { useState,useEffect } from 'react';
-
+import { useCardContext_80 } from '../context/CardContext';
 import { supabase } from '../db/clientSupabase';
 
 import Wrapper from '../assets/wrapper/Cards_80';
 const CardLocalJsonPage_80 = () => {
-    const [name, setName] = useState('Pocheng Chu');
-    const [id, setId] = useState('208410380');
+    const {name, id, data} = useCardContext_80();
+    // const [name, setName] = useState('Pocheng Chu');
+    // const [id, setId] = useState('208410380');
 
-    const [data, setData] = useState([]);
+    // const [data, setData] = useState([]);
     // console.log('card data', data);
 
-    const fetchCardDataFromSupabase = async () => {
-        try {
-          let { data, error } = await supabase.from('card_80').select('*')
-          console.log('data', data);
-          setData(data);
-        } catch (error) {
-          console.log(error);
-        }
-      };
-      useEffect(() => {
-        fetchCardDataFromSupabase();
-      }, []);
+    // const fetchCardDataFromSupabase = async () => {
+    //     try {
+    //       let { data, error } = await supabase.from('card_80').select('*')
+    //       console.log('data', data);
+    //       setData(data);
+    //     } catch (error) {
+    //       console.log(error);
+    //     }
+    //   };
+    //   useEffect(() => {
+    //     fetchCardDataFromSupabase();
+    //   }, []);
     
 
     return (

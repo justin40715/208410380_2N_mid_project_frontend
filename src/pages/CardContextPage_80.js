@@ -1,32 +1,19 @@
-import { useState,useEffect } from 'react';
-import axios from 'axios';
+import { useState } from 'react';
+
+import cardData from '../data/cardData_80';
+import { useCardContext_80 } from '../context/CardContext';
 import Wrapper from '../assets/wrapper/Cards_80';
-let api_url = `https://mid-project-backend.onrender.com/api/card2_80`;
+const CardLocalJsonPage_80 = () => {
+    const {name, id, data} = useCardContext_80();
+    // const [name, setName] = useState('Pocheng Chu');
+    // const [id, setId] = useState('208410380');
 
-const CardNodeServerPage_80 = () => {
-    const [name, setName] = useState('Pocheng Chu');
-    const [id, setId] = useState('208410380');
-
-    const [data, setData] = useState([]);
+    // const [data, setData] = useState(cardData);
     // console.log('card data', data);
-
-    const fetchCardDataFromServer = async () => {
-        try {
-            const results = await axios.get(api_url);
-            console.log('results', results);
-            setData(results.data);
-          } catch (error) {
-            console.log(error);
-          }
-      };
-      useEffect(() => {
-        fetchCardDataFromServer();
-      }, []);
-
     return (
-        <Wrapper>  
+        <Wrapper>
             <div className="section-title">
-                <h2>Fetch Cards Node Server</h2>
+                <h2>Fetch Cards from Local Json</h2>
                 <h3>{name} {id}</h3>
             </div>
             <section className="articles">
@@ -56,8 +43,8 @@ const CardNodeServerPage_80 = () => {
                 })}
 
             </section>
-        </Wrapper>
+        </Wrapper   >
     )
 }
 
-export default CardNodeServerPage_80;
+export default CardLocalJsonPage_80;

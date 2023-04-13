@@ -1,11 +1,10 @@
 import { useState } from 'react';
-import { useCardContext_80 } from '../context/CardContext';
+
 import Wrapper from '../assets/wrapper/Cards_80';
 const CardLocalJsonPage_80 = () => {
-  // const [name, setName] = useState('Pocheng Chu');
-  // const [id, setId] = useState('208410380');
-  
-  const {name, id, data} = useCardContext_80();
+  const [name, setName] = useState('Pocheng Chu');
+  const [id, setId] = useState('208410380');
+
   return (
     <Wrapper>
       <div className='section-title'>

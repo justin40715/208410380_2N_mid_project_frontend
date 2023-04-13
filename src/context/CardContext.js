@@ -17,7 +17,7 @@ const CardProvider_80 = ({children}) => {
           let { card, error } = await supabase.from('card_80').select('*')
     
           console.log('card', card);
-          dispatch({ type: 'GET_BLOGS_SUPABASE_SUCCUSS', payload: card});
+          dispatch({ type: 'GET_CARDS_SUPABASE_SUCCUSS', payload: card});
         //   setData(data);
         } catch (error) {
           console.log(error);

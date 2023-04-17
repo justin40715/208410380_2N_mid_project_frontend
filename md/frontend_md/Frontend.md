@@ -1,4 +1,4 @@
-[My GitHub Backend Repo URL](https://github.com/justin40715/208410380_2N_mid_project_frontend)
+[My GitHub Frontend Repo URL](https://github.com/justin40715/208410380_2N_mid_project_frontend)
 
 ### S1. 將前端 theme (html, css)，轉成 React components
 
@@ -32,8 +32,16 @@ acc7ce2 justin40715     Thu Mar 30 18:55:06 2023 +0800   S3. 可以直接透過 
 ![](Frontend_S4.png)
 ![](Frontend_S4-1.png)
 
+```
+7d454e7 justin40715     Thu Mar 30 19:25:47 2023 +0800  S4. 請加入選單
+```
+
 ### S5. 請使用 Context API 及 useReducer 來儲存資料
 
 ![](Frontend_S5.png)
 ![](Frontend_S5-1.png)
 ![](Frontend_S5-2.png)
+
+```
+4aa45fd justin40715     Mon Apr 17 23:07:25 2023 +0800  S5. 請使用 Context API 及 useReducer 來儲存資料
+```

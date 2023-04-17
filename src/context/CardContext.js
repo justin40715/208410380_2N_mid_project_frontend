@@ -14,10 +14,10 @@ const CardProvider_80 = ({children}) => {
     const [state, dispatch] = useReducer(CardReducer_80, initialState);
     const fetchCardDataFromSupabase = async () => {
         try {
-          let { card, error } = await supabase.from('card_80').select('*')
+          let { data, error } = await supabase.from('card_80').select('*')
     
-          console.log('card', card);
-          dispatch({ type: 'GET_CARDS_SUPABASE_SUCCUSS', payload: card});
+          console.log('data', data);
+          dispatch({ type: 'GET_CARDS_SUPABASE_SUCCUSS', payload: data});
         //   setData(data);
         } catch (error) {
           console.log(error);

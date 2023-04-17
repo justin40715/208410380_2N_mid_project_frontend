@@ -21,19 +21,19 @@ const NavbarResp_80 = () => {
             </ul>
           </li>
           <li>
-            <Link to='#'>Blog_Demo</Link>
+            <Link to='#'>CardContext_Demo</Link>
             <ul>
               <li>
-                <Link to='/'>BlogLocalJsonPage</Link>
+                <Link to='local_context_80'>CardLocalContextPage</Link>
               </li>
               <li>
-                <Link to='/'>BlogStaticPage</Link>
+                <Link to='/node_context_80'>CardNodeContextPage</Link>
               </li>
               <li>
-                <Link to='/'>BlogNodeServerPage</Link>
+                <Link to='/static_context_80'>CardStaticContextPage</Link>
               </li>
               <li>
-                <Link to='/'>BlogSupabasePage</Link>
+                <Link to='/supabase_context_80'>CardSupaContextPage</Link>
               </li>
             </ul>
           </li>

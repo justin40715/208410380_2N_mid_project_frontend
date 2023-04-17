@@ -31,3 +31,9 @@ acc7ce2 justin40715     Thu Mar 30 18:55:06 2023 +0800   S3. 可以直接透過 
 
 ![](Frontend_S4.png)
 ![](Frontend_S4-1.png)
+
+### S5. 請使用 Context API 及 useReducer 來儲存資料
+
+![](Frontend_S5.png)
+![](Frontend_S5-1.png)
+![](Frontend_S5-2.png)
